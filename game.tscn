@@ -2310,12 +2310,14 @@ sources/3 = SubResource("TileSetAtlasSource_gv8dl")
 
 [node name="player" parent="." instance=ExtResource("1_4tmd8")]
 z_index = 5
+position = Vector2(-1, 9)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-7, 2)
 tile_set = SubResource("TileSet_1weqi")
 format = 2
 layer_0/name = "BackgroundL"
