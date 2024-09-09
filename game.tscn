@@ -2307,10 +2307,11 @@ sources/2 = SubResource("TileSetAtlasSource_vpgcu")
 sources/3 = SubResource("TileSetAtlasSource_gv8dl")
 
 [node name="Game" type="Node2D"]
+position = Vector2(-4, -1)
 
 [node name="player" parent="." instance=ExtResource("1_4tmd8")]
 z_index = 5
-position = Vector2(-1, 9)
+position = Vector2(4, 6)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
