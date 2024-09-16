@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fu6uuiib7l8h"
-path="res://.godot/imported/RuiinOrb_Type1.png-5f2ca36b2941907db8c29a67c7ea08b0.ctex"
+uid="uid://bpra5v2xc6c5k"
+path="res://.godot/imported/knight.png-270a7871f0f8a2631fc9c0f263769fdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RuiinOrb_Type1.png"
-dest_files=["res://.godot/imported/RuiinOrb_Type1.png-5f2ca36b2941907db8c29a67c7ea08b0.ctex"]
+source_file="res://scence/knight.png"
+dest_files=["res://.godot/imported/knight.png-270a7871f0f8a2631fc9c0f263769fdc.ctex"]
 
 [params]
 

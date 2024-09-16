@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0lrserywuh71"]
+
+[ext_resource type="Script" path="res://script/item.gd" id="1_shxq4"]
+[ext_resource type="Texture2D" uid="uid://fu6uuiib7l8h" path="res://scence/RuiinOrb_Type1.png" id="2_ns0m4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_llty8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrd3k"]
+atlas = ExtResource("2_ns0m4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k8xix"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrd3k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Orb 2" type="CharacterBody2D"]
+z_index = 6
+scale = Vector2(6.93048, -7.33139)
+collision_layer = 4
+collision_mask = 2
+input_pickable = true
+script = ExtResource("1_shxq4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.65661e-10)
+rotation = 3.14159
+scale = Vector2(0.0234995, -0.0200026)
+shape = SubResource("CircleShape2D_llty8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Sprites" type="Node" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.91912e-10, 8.68332e-10)
+scale = Vector2(0.00782661, -0.00632273)
+sprite_frames = SubResource("SpriteFrames_k8xix")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8dms77wp4ikr"
-path="res://.godot/imported/Chibi_astro.png-c65aead282d633904bdc7b008dc288ac.ctex"
+path="res://.godot/imported/Chibi_astro.png-420a572a9850df94530c29d0322eb638.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Chibi_astro.png"
-dest_files=["res://.godot/imported/Chibi_astro.png-c65aead282d633904bdc7b008dc288ac.ctex"]
+source_file="res://vacaroxa--generic-run-n-gun-pack--v.1.0/Chibi_astro.png"
+dest_files=["res://.godot/imported/Chibi_astro.png-420a572a9850df94530c29d0322eb638.ctex"]
 
 [params]
 

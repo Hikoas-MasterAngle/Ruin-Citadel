@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://kxainc80ody5"]
+[gd_scene load_steps=6 format=3 uid="uid://kxainc80ody5"]
 
-[ext_resource type="Texture2D" uid="uid://fu6uuiib7l8h" path="res://RuiinOrb_Type1.png" id="1_0htqb"]
+[ext_resource type="Script" path="res://script/orb_type_1.gd" id="1_wu6u8"]
+[ext_resource type="Texture2D" uid="uid://fu6uuiib7l8h" path="res://scence/RuiinOrb_Type1.png" id="2_6x6hs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lcnik"]
-atlas = ExtResource("1_0htqb")
+atlas = ExtResource("2_6x6hs")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y7bmc"]
@@ -18,9 +19,12 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2inl6"]
-radius = 4.12311
+radius = 3.0
 
 [node name="orb-type1" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_wu6u8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 2.38419e-07)
